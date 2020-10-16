@@ -18,8 +18,8 @@ class Datos extends Component {
     const area = this.props.pais.area;
     //const codeMoneda = this.props.pais[0];
 
-    const currencies = this.props.pais.currencies;
-    console.log(currencies);
+    //const currencies = this.props.pais.currencies;
+    //console.log(currencies);
 
     return (
       <div className="card text-center container">

@@ -5,7 +5,7 @@ import Formulario from "./componentes/Formulario";
 
 class App extends React.Component {
   state = {
-    pais: [],
+    pais: []
   };
 
   componentDidMount() {

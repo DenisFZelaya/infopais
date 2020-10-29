@@ -10,7 +10,7 @@ class Datos extends Component {
     const alpa2 = this.props.pais.alpha3Code;
     const imagen = this.props.pais.flag;
     const capital = this.props.pais.capital;
-    const codigoArea = this.props.pais.callingCodes;
+    //const codigoArea = this.props.pais.callingCodes;
     const dominioWeb = this.props.pais.topLevelDomain;
     const region = this.props.pais.region;
     const subRegion = this.props.pais.subregion;
@@ -18,8 +18,16 @@ class Datos extends Component {
     const area = this.props.pais.area;
     //const codeMoneda = this.props.pais[0];
 
-    //const currencies = this.props.pais.currencies;
-    //console.log(currencies);
+    const currencies = this.props.pais.currencies;
+
+ //const {code} = currencies;
+
+ console.log(currencies);
+
+    
+    //console.log(Object.keys(currencies).map(moneda => ({
+      
+    //})));
 
     return (
       <div className="card text-center container">
@@ -36,9 +44,9 @@ class Datos extends Component {
             </div>
             <div className="col">
               <img src={imagen} alt="bandera" className="img-fluid" />
-              <ul class="list-group">
-                <li class="list-group-item">Poblacion: {poblacion}</li>
-                <li class="list-group-item">Area: {area}km2</li>
+              <ul className="list-group">
+                <li Name="list-group-item">Poblacion: {poblacion}</li>
+                <li className="list-group-item">Area: {area}km2</li>
               </ul>
             </div>
             <div className="w-100"></div>
